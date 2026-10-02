@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/api/search-index", "destination": "/api/search-index.json" },
+    { "source": "/page/:page", "destination": "/page/:page/index.html" },
+    { "source": "/:category/page/:page", "destination": "/:category/page/:page/index.html" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "jichangtuijian-family-clone",
+  "version": "1.0.0",
+  "description": "机场推荐 - VPN翻墙科学上网梯子测评 全站静态镜像",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "jichangtuijian",
+    "static-site",
+    "clone"
+  ],
+  "author": "",
+  "license": "ISC"
+}
