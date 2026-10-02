@@ -2,4 +2,13 @@ User-agent: *
 Allow: /
 Allow: /_next/static/
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
 Sitemap: https://jichangtuijian.family/sitemap.xml
