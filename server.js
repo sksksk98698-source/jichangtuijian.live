@@ -31,6 +31,9 @@ function serveFile(res, filePath, contentType, statusCode = 200) {
       'Content-Type': contentType || 'application/octet-stream',
       'Content-Length': stat.size,
       'Cache-Control': 'public, max-age=3600',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'SAMEORIGIN',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
     });
     fs.createReadStream(filePath).pipe(res);
   } catch (err) {
@@ -69,6 +72,14 @@ const server = http.createServer((req, res) => {
     const apiFile = path.join(ROOT, 'api', 'search-index.json');
     if (fs.existsSync(apiFile)) {
       return serveFile(res, apiFile, MIME_TYPES['.json']);
+    }
+  }
+
+  // Handle /opengraph-image
+  if (pathname === '/opengraph-image' || pathname === '/opengraph-image.png') {
+    const ogFile = path.join(ROOT, 'opengraph-image.png');
+    if (fs.existsSync(ogFile)) {
+      return serveFile(res, ogFile, MIME_TYPES['.png']);
     }
   }
 

@@ -1,6 +1,6 @@
 # 机场推荐 - 全站完整克隆镜像
 
-本仓库为 [机场推荐 - VPN翻墙科学上网梯子测评 (https://jichangtuijian1.com/)](https://jichangtuijian1.com/) 的完整静态离线克隆版本。
+本仓库为 [机场推荐 - VPN翻墙科学上网梯子测评 (https://jichangtuijian.family/)](https://jichangtuijian.family/) 的完整静态离线克隆版本。
 
 ---
 

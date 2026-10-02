@@ -1,4 +1,5 @@
-User-Agent: *
+User-agent: *
 Allow: /
+Allow: /_next/static/
 
-Sitemap: https://jichangtuijian1.com/sitemap.xml
+Sitemap: https://jichangtuijian.family/sitemap.xml
