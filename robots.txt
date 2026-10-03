@@ -14,4 +14,4 @@ Allow: /
 User-agent: yisouspider
 Allow: /
 
-Sitemap: https://jichangtuijian.family/sitemap.xml
+Sitemap: https://jichangtuijian.live/sitemap.xml

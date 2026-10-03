@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const OLD_DOMAIN = 'jichangtuijian1.com';
-const NEW_DOMAIN = 'jichangtuijian.family';
+const NEW_DOMAIN = 'jichangtuijian.live';
 const OLD_BASE = `https://${OLD_DOMAIN}`;
 const NEW_BASE = `https://${NEW_DOMAIN}`;
 

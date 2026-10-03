@@ -1,6 +1,6 @@
 # 网站内容架构与选题规划地图 (Content Map)
 
-本文档为 `https://jichangtuijian.family` 的官方内容架构与分类专题规划图谱。
+本文档为 `https://jichangtuijian.live` 的官方内容架构与分类专题规划图谱。
 
 ---
 

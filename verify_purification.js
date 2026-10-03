@@ -38,12 +38,12 @@ walk('.', (filePath) => {
     // Check Canonical in HTML
     if (filePath.endsWith('.html')) {
       const canonicalMatch = content.match(/<link[^>]+rel="canonical"[^>]*>/i);
-      if (!canonicalMatch || canonicalMatch[0].includes('href=""') || !canonicalMatch[0].includes('href="https://jichangtuijian.family')) {
+      if (!canonicalMatch || canonicalMatch[0].includes('href=""') || !canonicalMatch[0].includes('href="https://jichangtuijian.live')) {
         invalidCanonicalMatches.push({ filePath, tag: canonicalMatch ? canonicalMatch[0] : 'NONE' });
       }
 
       const ogUrlMatch = content.match(/<meta[^>]+property="og:url"[^>]*>/i);
-      if (!ogUrlMatch || ogUrlMatch[0].includes('content=""') || !ogUrlMatch[0].includes('content="https://jichangtuijian.family')) {
+      if (!ogUrlMatch || ogUrlMatch[0].includes('content=""') || !ogUrlMatch[0].includes('content="https://jichangtuijian.live')) {
         invalidOgUrlMatches.push({ filePath, tag: ogUrlMatch ? ogUrlMatch[0] : 'NONE' });
       }
     }

@@ -1,6 +1,6 @@
 # 预防性 SEO 健康检查与技术优化审计报告
 
-- **受审站点 / 域名**：`https://jichangtuijian.family`
+- **受审站点 / 域名**：`https://jichangtuijian.live`
 - **审计基准时间**：2026-10-03
 - **审计范围**：全站 360 个已发布核心页面、静态资源包、链接拓扑图、Schema 结构化数据、联盟链接合规性与 E-E-A-T 信任信号
 - **审计定位**：资深技术 SEO 审计师、前端架构工程师与内容质量分析师
@@ -34,11 +34,11 @@
   - `Bingbot`：**PASS**（显式 Allow: /）
   - `Baiduspider`：**PASS**（显式 Allow: /）
   - `yisouspider`：**WARNING**（神马搜索爬虫尚未单独显式声明，虽可通过通配符继承，但显式声明更优）。
-- **Sitemap 声明**：**PASS**（声明链接准确指向正式域名 `https://jichangtuijian.family/sitemap.xml`）。
+- **Sitemap 声明**：**PASS**（声明链接准确指向正式域名 `https://jichangtuijian.live/sitemap.xml`）。
 - **误屏蔽路径**：**PASS**（核心栏目 /pianyijichang、/iplc、/gaoduanjichang、/anliangfufei、/dailiruanjian、/guowaivpn、/huiguo、/xieyi 均完全允许抓取）。
 
 ### 1.2 Canonical 与 Noindex
-- **Canonical 验证**：**PASS**。全站所有页面均配置了自引用绝对路径 Canonical（例如 `https://jichangtuijian.family/iplc/enet`），0 处遗漏，0 处空值，0 处指向测试域名。
+- **Canonical 验证**：**PASS**。全站所有页面均配置了自引用绝对路径 Canonical（例如 `https://jichangtuijian.live/iplc/enet`），0 处遗漏，0 处空值，0 处指向测试域名。
 - **Noindex 检查**：**PASS**。全站核心内容页面均无 `<meta name="robots" content="noindex">`。
 - **HTTP 响应头**：**PASS**。响应头中无 `X-Robots-Tag: noindex`。
 
@@ -46,7 +46,7 @@
 - **可访问性**：**PASS**。`sitemap.xml` 正常返回 HTTP 200，XML 格式合规。
 - **URL 数量统计**：共收录 360 个正式 URL。
 - **异常排查**：**PASS**。Sitemap 内 0 个 404 URL、0 个草稿、0 个重复 URL。
-- **域名一致性**：**PASS**。全部 360 个 `<loc>` 100% 统一使用 `https://jichangtuijian.family`。
+- **域名一致性**：**PASS**。全部 360 个 `<loc>` 100% 统一使用 `https://jichangtuijian.live`。
 - **更新时效 (lastmod)**：**PASS**。其中 350 个核心测评页均包含规范的 `YYYY-MM-DD` 格式 lastmod（分布在 2026-06 至 2026-10），时效性良好。
 
 ### 1.4 URL 规范
@@ -222,7 +222,7 @@
 
 ### 8.1 索引健康度基础
 - 全站 360 个核心页面均已纳入 `sitemap.xml`，且已具备标准 Canonical、Robots、OpenGraph 与 Twitter Card 元数据。
-- 上线部署至正式域名后，可直接向 Google Search Console 与 Bing Webmaster Tools 提交 `https://jichangtuijian.family/sitemap.xml`。
+- 上线部署至正式域名后，可直接向 Google Search Console 与 Bing Webmaster Tools 提交 `https://jichangtuijian.live/sitemap.xml`。
 
 ### 8.2 展现与点击优化潜力
 - 全站 Title 与 Description 已实现 100% 唯一定制，包含了高点击吸引力要素（“每GB单价”、“晚高峰实测”、“优惠码”），预计能获得高于行业平均的 CTR。

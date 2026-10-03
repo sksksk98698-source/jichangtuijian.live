@@ -1,6 +1,6 @@
 # 机场推荐 - 全站完整克隆镜像
 
-本仓库为 [机场推荐 - VPN翻墙科学上网梯子测评 (https://jichangtuijian.family/)](https://jichangtuijian.family/) 的完整静态离线克隆版本。
+本仓库为 [机场推荐 - VPN翻墙科学上网梯子测评 (https://jichangtuijian.live/)](https://jichangtuijian.live/) 的完整静态离线克隆版本。
 
 ---
 
@@ -53,7 +53,7 @@ node server.js
 ## 📁 核心目录结构
 
 ```
-jichangtuijian.family/
+jichangtuijian.live/
 ├── index.html              # 网站首页
 ├── page/                   # 首页各分页 (page/2 至 page/32)
 ├── pianyijichang/          # 便宜机场分类及分页

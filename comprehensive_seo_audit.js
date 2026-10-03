@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
-const DOMAIN = 'https://jichangtuijian.family';
+const DOMAIN = 'https://jichangtuijian.live';
 
 // 1. Find all HTML files
 function getAllHtmlFiles(dir) {
@@ -146,7 +146,7 @@ for (let filePath of htmlFiles) {
 
     if (href.startsWith('http://') || href.startsWith('https://')) {
       const urlObj = new URL(href);
-      if (urlObj.hostname !== 'jichangtuijian.family' && urlObj.hostname !== 'localhost') {
+      if (urlObj.hostname !== 'jichangtuijian.live' && urlObj.hostname !== 'localhost') {
         const isCommercial = /aff|ref|code|register|order|cart|buy|sub|shop/i.test(href) ||
                              urlObj.hostname.includes('aff') ||
                              urlObj.hostname.includes('flycat') ||

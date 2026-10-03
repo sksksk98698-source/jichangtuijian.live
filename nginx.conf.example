@@ -1,28 +1,28 @@
 server {
     listen 80;
     listen [::]:80;
-    server_name jichangtuijian.family www.jichangtuijian.family;
-    return 301 https://jichangtuijian.family$request_uri;
+    server_name jichangtuijian.live www.jichangtuijian.live;
+    return 301 https://jichangtuijian.live$request_uri;
 }
 
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name www.jichangtuijian.family;
+    server_name www.jichangtuijian.live;
     # ssl_certificate /path/to/fullchain.pem;
     # ssl_certificate_key /path/to/privkey.pem;
-    return 301 https://jichangtuijian.family$request_uri;
+    return 301 https://jichangtuijian.live$request_uri;
 }
 
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name jichangtuijian.family;
+    server_name jichangtuijian.live;
 
     # ssl_certificate /path/to/fullchain.pem;
     # ssl_certificate_key /path/to/privkey.pem;
 
-    root /var/www/jichangtuijian.family;
+    root /var/www/jichangtuijian.live;
     index index.html;
 
     # 安全响应头与 SEO 优化
