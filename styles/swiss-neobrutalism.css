@@ -1,0 +1,430 @@
+/* ==========================================================================
+   SWISS INTERNATIONAL STYLE / NEOBRUTALIST LAB & CONSUMER REPORTS
+   Design System for jichangtuijian.family (Airport Lab)
+   ========================================================================== */
+
+:root {
+  --background: #F6F4EE !important;
+  --foreground: #0A0A0A !important;
+  --card: #FFFFFF !important;
+  --card-alt: #F0EDE4 !important;
+  --rule: #0A0A0A !important;
+  --rule-light: #D4D0C5 !important;
+  --accent: #FF4B26 !important;       /* Safety Lab Orange */
+  --accent-blue: #0047FF !important;  /* Klein Electric Blue */
+  --accent-green: #059669 !important; /* Test Passed Emerald */
+  --accent-yellow: #F59E0B !important;
+  --muted: #474747 !important;
+  --shadow-hard: 4px 4px 0px #0A0A0A !important;
+  --shadow-hard-sm: 2px 2px 0px #0A0A0A !important;
+  --shadow-hard-lg: 6px 6px 0px #0A0A0A !important;
+}
+
+/* Global Background and High-Contrast Typography */
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transform Editorial Serif into Bold Swiss Grotesk */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.035em !important;
+  color: #0A0A0A !important;
+  text-transform: none;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
+  line-height: 1.08 !important;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem) !important;
+  line-height: 1.15 !important;
+}
+
+/* Kickers & Section Headers */
+.kicker, [class*="kicker"] {
+  font-family: var(--font-geist-mono), monospace !important;
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  background-color: #0A0A0A !important;
+  padding: 3px 8px !important;
+  display: inline-block !important;
+  border-radius: 2px !important;
+  margin-bottom: 6px !important;
+}
+
+/* Header & Top Bar */
+header {
+  border-bottom: 3px solid #0A0A0A !important;
+  background-color: #F6F4EE !important;
+}
+
+header a[href="/"] > span::after {
+  content: "LAB 实验室";
+  background-color: #FF4B26;
+  color: #FFFFFF;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 2px;
+  border: 1px solid #0A0A0A;
+  margin-left: 8px;
+  box-shadow: 1.5px 1.5px 0px #0A0A0A;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+
+/* Navigation Links */
+nav a {
+  font-weight: 800 !important;
+  letter-spacing: 0.02em !important;
+  color: #0A0A0A !important;
+  transition: all 0.12s ease !important;
+}
+
+nav a:hover {
+  color: var(--accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+  text-decoration-thickness: 2.5px !important;
+}
+
+/* Search Box Styling */
+input[type="search"], input[placeholder*="搜索"] {
+  border: 2px solid #0A0A0A !important;
+  border-radius: 3px !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 2.5px 2.5px 0px #0A0A0A !important;
+  font-weight: 700 !important;
+  color: #0A0A0A !important;
+}
+
+input[type="search"]:focus, input[placeholder*="搜索"]:focus {
+  outline: none !important;
+  box-shadow: 3.5px 3.5px 0px var(--accent) !important;
+  border-color: #0A0A0A !important;
+}
+
+/* Neobrutalist Matrices & Comparison Tables */
+section[class*="bg-canvas-alt"], section.border-b {
+  background-color: #F6F4EE !important;
+  border-bottom: 3px solid #0A0A0A !important;
+}
+
+table {
+  border: 2.5px solid #0A0A0A !important;
+  border-collapse: collapse !important;
+  background-color: #FFFFFF !important;
+  box-shadow: var(--shadow-hard) !important;
+  width: 100% !important;
+}
+
+thead, thead tr {
+  background-color: #F0EDE4 !important;
+  border-bottom: 2.5px solid #0A0A0A !important;
+}
+
+th {
+  color: #0A0A0A !important;
+  font-weight: 900 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  border-right: 1.5px solid #0A0A0A !important;
+  padding: 12px 14px !important;
+}
+
+th:last-child {
+  border-right: none !important;
+}
+
+tbody tr {
+  border-bottom: 1.5px solid #0A0A0A !important;
+  transition: background-color 0.1s ease !important;
+}
+
+tbody tr:hover {
+  background-color: #FFFDE8 !important;
+}
+
+td {
+  border-right: 1.5px solid #0A0A0A !important;
+  padding: 12px 14px !important;
+  color: #0A0A0A !important;
+  font-size: 0.92rem !important;
+}
+
+td:last-child {
+  border-right: none !important;
+}
+
+/* Brand Link in first column */
+td:first-child a {
+  font-weight: 900 !important;
+  color: #0A0A0A !important;
+  font-size: 1.05rem !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1.5px !important;
+  text-underline-offset: 3px !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+td:first-child a:hover {
+  color: #FF4B26 !important;
+}
+
+/* Table unlock tags */
+td span.rounded, td span[class*="bg-canvas-alt"] {
+  border: 1px solid #0A0A0A !important;
+  background-color: #F6F4EE !important;
+  color: #0A0A0A !important;
+  font-weight: 700 !important;
+  border-radius: 2px !important;
+  padding: 2px 6px !important;
+  font-size: 0.72rem !important;
+  display: inline-block !important;
+}
+
+/* Official website button in table (only last column) */
+td:last-child a {
+  background-color: #FF4B26 !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid #0A0A0A !important;
+  border-radius: 3px !important;
+  padding: 4px 10px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+  box-shadow: 2px 2px 0px #0A0A0A !important;
+  transition: all 0.12s ease !important;
+}
+
+td:last-child a:hover {
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 3px 3px 0px #0A0A0A !important;
+  background-color: #E03E1B !important;
+}
+
+/* Price column highlighting */
+td:nth-child(3) {
+  font-family: var(--font-geist-mono), monospace !important;
+  font-weight: 900 !important;
+  color: #0047FF !important;
+  font-size: 0.98rem !important;
+}
+
+/* Pagination numbers */
+button.cursor-pointer, nav button, nav a.border {
+  border: 1.5px solid #0A0A0A !important;
+  border-radius: 2px !important;
+  font-weight: 800 !important;
+  background-color: #FFFFFF !important;
+  color: #0A0A0A !important;
+  box-shadow: 2px 2px 0px #0A0A0A !important;
+  transition: all 0.12s ease !important;
+}
+
+button.cursor-pointer:hover, nav button:hover, nav a.border:hover {
+  transform: translate(-1px, -1px) !important;
+  box-shadow: 3px 3px 0px #0A0A0A !important;
+  background-color: #FFFDF0 !important;
+}
+
+button[aria-current="page"], nav a[aria-current="page"] {
+  background-color: #0A0A0A !important;
+  color: #FFFFFF !important;
+  box-shadow: 2px 2px 0px #FF4B26 !important;
+}
+
+/* Filter Tag Buttons at the top of the table */
+section button.border-rule, section button[class*="border"] {
+  border: 1.5px solid #0A0A0A !important;
+  box-shadow: 2px 2px 0px #0A0A0A !important;
+  font-weight: 800 !important;
+  border-radius: 2px !important;
+}
+
+/* Article list items transformed into Neobrutalist cards */
+
+
+
+
+section article h3, section article h2 {
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+}
+
+section article h3 a, section article h2 a {
+  color: #0A0A0A !important;
+  transition: color 0.15s ease !important;
+}
+
+section article h3 a:hover, section article h2 a:hover {
+  color: #FF4B26 !important;
+}
+
+/* Verification Stamp in Hero */
+.hero-verification-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border: 2px solid #0A0A0A;
+  box-shadow: 3px 3px 0px #0A0A0A;
+  padding: 10px 16px;
+  border-radius: 3px;
+  margin-top: 20px;
+  max-width: 480px;
+}
+
+.hero-verification-stamp {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 2px dashed #0A0A0A;
+  border-radius: 50%;
+  font-weight: 900;
+  color: #FF4B26;
+  font-size: 0.65rem;
+  line-height: 1;
+  text-align: center;
+  shrink: 0;
+}
+
+/* Callouts and Warning Boxes */
+blockquote, .callout-box {
+  background-color: #FFFDF0 !important;
+  border-left: 6px solid var(--accent) !important;
+  border-top: 2px solid #0A0A0A !important;
+  border-right: 2px solid #0A0A0A !important;
+  border-bottom: 2px solid #0A0A0A !important;
+  box-shadow: var(--shadow-hard-sm) !important;
+  padding: 16px 20px !important;
+  margin: 24px 0 !important;
+  font-size: 0.95rem !important;
+  color: #0A0A0A !important;
+}
+
+/* Footer Section */
+footer {
+  border-top: 4px solid #0A0A0A !important;
+  background-color: #F0EDE4 !important;
+  color: #0A0A0A !important;
+}
+
+footer a {
+  color: #0A0A0A !important;
+  font-weight: 800 !important;
+}
+
+footer a:hover {
+  color: var(--accent) !important;
+}
+
+
+
+/* ==========================================================================
+   ARTICLE ITEMS AS NEOBRUTALIST CARDS
+   ========================================================================== */
+
+a.group.grid {
+  border: 2px solid #0A0A0A !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 4px 4px 0px #0A0A0A !important;
+  padding: 22px 26px !important;
+  margin-bottom: 20px !important;
+  border-radius: 2px !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  text-decoration: none !important;
+  border-top: 2px solid #0A0A0A !important;
+}
+
+a.group.grid:hover {
+  transform: translate(-3px, -3px) !important;
+  box-shadow: 7px 7px 0px #0A0A0A !important;
+  background-color: #FFFDE8 !important;
+}
+
+a.group.grid time {
+  font-family: var(--font-geist-mono), monospace !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  background-color: #0A0A0A !important;
+  padding: 3px 8px !important;
+  display: inline-block !important;
+  border-radius: 2px !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.05em !important;
+}
+
+a.group.grid h3 {
+  font-weight: 900 !important;
+  color: #0A0A0A !important;
+  letter-spacing: -0.025em !important;
+  transition: color 0.12s ease !important;
+}
+
+a.group.grid:hover h3 {
+  color: #FF4B26 !important;
+}
+
+a.group.grid p {
+  color: #383838 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+}
+
+
+
+/* Detail page article reading experience - Clean, authoritative layout */
+article.max-w-2xl, article[class*="max-w-2xl"], main article {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Internal Headings in Review Articles */
+article h2, main article h2 {
+  border-bottom: 2.5px solid #0A0A0A !important;
+  padding-bottom: 8px !important;
+  margin-top: 48px !important;
+  margin-bottom: 20px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.025em !important;
+}
+
+article h3, main article h3 {
+  font-weight: 800 !important;
+  margin-top: 32px !important;
+  margin-bottom: 12px !important;
+  color: #0A0A0A !important;
+}
+
+/* Bullet points and lists */
+article ul, main article ul {
+  list-style-type: square !important;
+}
+
+article li::marker {
+  color: #FF4B26 !important;
+}
