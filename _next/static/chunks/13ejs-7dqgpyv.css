@@ -165,13 +165,20 @@ tbody tr:hover {
 
 td {
   border-right: 1.5px solid #0A0A0A !important;
-  padding: 12px 14px !important;
+  padding: 6px 8px !important;
   color: #0A0A0A !important;
   font-size: 0.92rem !important;
+  vertical-align: middle !important;
+}
+
+th {
+  vertical-align: middle !important;
 }
 
 td:last-child {
   border-right: none !important;
+  text-align: center !important;
+  vertical-align: middle !important;
 }
 
 /* Brand Link in first column */
@@ -210,14 +217,17 @@ td:last-child a {
   color: #FFFFFF !important;
   border: 1.5px solid #0A0A0A !important;
   border-radius: 3px !important;
-  padding: 4px 10px !important;
-  font-weight: 900 !important;
+  padding: 4px 12px !important;
+  font-weight: 800 !important;
+  font-size: 0.84rem !important;
   text-decoration: none !important;
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: center !important;
   gap: 3px !important;
   box-shadow: 2px 2px 0px #0A0A0A !important;
   transition: all 0.12s ease !important;
+  white-space: nowrap !important;
 }
 
 td:last-child a:hover {
@@ -435,8 +445,56 @@ article li::marker {
   color: #FF4B26 !important;
 }
 
-.lab-badge { display: inline-block; padding: 1px 5px; font-size: 10px; font-weight: 600; border-radius: 2px; margin-left: 6px; vertical-align: middle; line-height: 1.3; }
-.lab-badge-orange { background: rgba(234, 88, 12, 0.1); color: #ea580c; border: 1px solid rgba(234, 88, 12, 0.3); }
-.lab-badge-blue { background: rgba(37, 99, 235, 0.08); color: #2563eb; border: 1px solid rgba(37, 99, 235, 0.25); }
-.lab-badge-gray { background: rgba(100, 116, 139, 0.08); color: #64748b; border: 1px solid rgba(100, 116, 139, 0.25); }
-.lab-badge-black { background: #000; color: #fff; border: 1px solid #000; }
+.lab-badge { 
+  display: inline-flex !important; 
+  align-items: center !important;
+  padding: 1.5px 6px !important; 
+  font-size: 10.5px !important; 
+  font-weight: 700 !important; 
+  border-radius: 3px !important; 
+  margin-left: 6px !important; 
+  vertical-align: middle !important; 
+  line-height: 1.1 !important; 
+  white-space: nowrap !important;
+  letter-spacing: 0.02em !important;
+}
+.lab-badge-orange { 
+  background-color: #FFF2EB !important; 
+  color: #C2410C !important; 
+  border: 1.5px solid #EA580C !important; 
+}
+.lab-badge-blue { 
+  background-color: #EFF6FF !important; 
+  color: #1D4ED8 !important; 
+  border: 1.5px solid #2563EB !important; 
+}
+.lab-badge-gray { 
+  background-color: #F8FAFC !important; 
+  color: #334155 !important; 
+  border: 1.5px solid #64748B !important; 
+}
+.lab-badge-green { 
+  background-color: #ECFDF5 !important; 
+  color: #047857 !important; 
+  border: 1.5px solid #10B981 !important; 
+}
+.lab-badge-black { 
+  background-color: #000000 !important; 
+  color: #FFFFFF !important; 
+  border: 1.5px solid #000000 !important; 
+}
+
+.coupon-tag {
+  display: inline-block !important;
+  font-family: var(--font-geist-mono), monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #B45309 !important;
+  background-color: #FEF3C7 !important;
+  border: 1px dashed #D97706 !important;
+  border-radius: 3px !important;
+  padding: 1px 5px !important;
+  margin-top: 3px !important;
+  white-space: nowrap !important;
+  line-height: 1.2 !important;
+}
