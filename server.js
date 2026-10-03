@@ -30,7 +30,7 @@ function serveFile(res, filePath, contentType, statusCode = 200) {
     res.writeHead(statusCode, {
       'Content-Type': contentType || 'application/octet-stream',
       'Content-Length': stat.size,
-      'Cache-Control': 'public, max-age=3600',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'SAMEORIGIN',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
