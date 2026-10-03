@@ -11,4 +11,7 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
+User-agent: yisouspider
+Allow: /
+
 Sitemap: https://jichangtuijian.family/sitemap.xml
